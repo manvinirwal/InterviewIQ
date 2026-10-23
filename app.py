@@ -64,7 +64,8 @@ with gr.Blocks(title="InterviewIQ") as demo:
     answer_box = gr.Textbox(label="Your answer", lines=4)
     submit_btn = gr.Button("Submit Answer")
     feedback_box = gr.Markdown(label="Coach feedback")
-
+    #feedback_box is created as gr.Markdown, so the feedback string is rendered as Markdown—formatting such as **bold**, headings, or bullet lists appears formatted.
+    #  The scorecard and question display are also gr.Markdown
     gr.Markdown("### Scorecard")
     scorecard_box = gr.Markdown("_No answers scored yet._")
 
